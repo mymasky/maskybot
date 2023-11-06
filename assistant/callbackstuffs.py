@@ -166,7 +166,7 @@ TOKEN_FILE = "resources/auths/auth_token.txt"
 )
 async def send(eve):
     key, name = (eve.data_match.group(1)).decode("UTF-8").split("_")
-    thumb = "https://graph.org/file/60408fea8439e6702674d.jpg"
+    thumb = "https://telegra.ph/file/b73200fd892741e05ef39.jpg"
     await eve.answer("■ Sending ■")
     data = f"uh_{key}_"
     index = None
@@ -257,7 +257,7 @@ async def changes(okk):
     )
     cli = "\n\nKlik tombol di bawah untuk memperbarui!"
     if not match:
-        thumb = "https://graph.org/file/60408fea8439e6702674d.jpg"
+        thumb = "https://telegra.ph/file/b73200fd892741e05ef39.jpg"
         try:
             if len(tl_chnglog) > 700:
                 tl_chnglog = f"{tl_chnglog[:700]}..."
@@ -270,7 +270,7 @@ async def changes(okk):
                 language="md",
             )
             return await okk.edit(
-                f"**• Naya Userbot •**{cli}",
+                f"**• Starlight-Ubot •**{cli}",
                 file=thumb,
                 buttons=button,
                 force_document=True,
@@ -374,7 +374,7 @@ async def hndlrr(event):
     name = "Handler/ Trigger"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            f"Kirim handler/triger yang ingin anda gunakan\n [{HNDLR}] adalah handler/triger saat ini.",
+            f"Kirim handler/triger yang ingin anda gunakan\n [{HNDLR}] adalah handler/triger saat ini. jangan pakai huruf atau angka ya tolol",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response

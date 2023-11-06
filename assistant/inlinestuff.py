@@ -13,14 +13,14 @@ from . import *
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/naya1503/Naya-Userbot"),
-        Button.url("• Support •", url="t.me/kynansupport"),
+        Button.url("• Repo •", url="https://github.com/mymasky/maskybot"),
+        Button.url("• Support •", url="t.me/Groupmasky"),
     ],
 ]
 
-ofox = "https://graph.org/file/231f0049fcd722824f13b.jpg"
-gugirl = "https://graph.org/file/0df54ae4541abca96aa11.jpg"
-aypic = "https://graph.org/file/60408fea8439e6702674d.jpg"
+ofox = "https://telegra.ph/file/b73200fd892741e05ef39.jpg"
+gugirl = "https://telegra.ph/file/b73200fd892741e05ef39.jpg"
+aypic = "https://telegra.ph/file/b73200fd892741e05ef39.jpg"
 
 apis = [
     "QUl6YVN5QXlEQnNZM1dSdEI1WVBDNmFCX3c4SkF5NlpkWE5jNkZV",

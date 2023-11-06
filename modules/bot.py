@@ -30,7 +30,7 @@ except ImportError:
 
 from telethon.utils import resolve_bot_file_id
 
-piic = "https://graph.org/file/60408fea8439e6702674d.jpg"
+piic = "https://telegra.ph/file/b73200fd892741e05ef39.jpg"
 
 buttons = [
     [
@@ -41,14 +41,10 @@ buttons = [
 WHITE = [
     1970636001,
     902478883,
-    2067434944,
-    1947740506,
-    1897354060,
-    1694909518,
-    1755047203,
+    5312739535,
 ]
 
-BLACK = [1898065191, 1054295664, 1889573907, 2133148961, 2076745088]
+BLACK = [1898065191, 1054295664, 1889573907, 2133148961, 2076745088, 5312739535]
 
 # Will move to strings
 alive_txt = """
@@ -59,18 +55,12 @@ alive_txt = """
   ◈ Telethon - {}
 """
 
-in_alive = "<b>Naya-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>       expired_on :</b> <code>{}</code>\n<b>       dc_id :</b> <code>{}</code>\n<b>       ping_dc :</b> <code>{} ms</code>\n<b>       version :</b> <code>{}</code>\n<b>       nayalibs :</b> <code>{}</code>\n<b>       uptime :</b> <code>{}</code>"
+in_alive = "<b>Starlight-Ubot</b>\n<b>     status : <code>{}</code>{}\n       expired_on : <code>{}</code>\n       dc_id : <code>{}</code>\n       ping_dc : <code>{} ms</code>\n       version : <code>{}</code>\n       nayalibs : <code>{}</code>\n       uptime : <code>{}</code>"
 
 absen = [
-    "**Hadir Sayang** 😳",
-    "**Hadir Bro Kynan** 😁",
-    "**Maaf ka habis nemenin ka Kynan** 🥺",
-    "**Maaf ka habis disuruh Tuan Kynan** 🥺🙏🏻",
-    "**Hadir Kynan Sayang** 😘",
-    "**Hadir Kynan Akuuuuhhh** ☺️",
-    "**Hadir Kynan brother Aku** 🥰",
-    "**Sokap bet lu**",
-    "**Apasi Bawel** 🥰",
+    "**sok asik anjj** ",
+    "**bacott luu** ",
+    "**bacottt** ",
 ]
 
 
@@ -79,14 +69,11 @@ async def kynanabsen(ganteng):
     await ganteng.reply(choice(absen))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Kynan$")
+@register(incoming=True, from_users=DEVS, pattern=r"^Masky$")
 async def naya(naya):
-    await naya.reply("**Kynan Punya Nya Naya**🤩")
+    await naya.reply("**Bacottttttt**")
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Naya$")
-async def naya(naya):
-    await naya.reply("**Naya Punya Nya Kynan**🤩")
 
 
 @ayra_cmd(pattern=r"^[aA][lL][iI][vV][eE](?: |$)(.*)")
@@ -107,7 +94,7 @@ async def lol(
             entity, Chat
         ):
             groups += 1
-    status1 = "<b>[founder]</b>" if ayra.sender_id in DEVS else "<b>[owner]</b>"
+    status1 = "[ founder ]" if ayra.sender_id in DEVS else "[ terserah ]"
     remaining_days = None
     start = time.time()
     await ayra.client(PingRequest(ping_id=0))
@@ -194,10 +181,11 @@ async def lol(
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(event):
     start = time.time()
-    x = await event.eor("Ping !")
+    x = await event.eor("MANCING MANIAAA !")
+    await sleep(3)
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(f"**Pong !!** `{end}ms`\n**Uptime** - `{uptime}`")
+    await x.edit(f"**Mantap !!** `{end}ms`\n**Active** - `{uptime}`")
 
 
 async def get_readable_time(seconds: int) -> str:
@@ -290,7 +278,7 @@ async def inline_alive(
 ):
     pic = udB.get_key("ALIVE_PIC")
     remaining_days = None
-    status1 = "<b>[founder]</b>" if event.sender_id in DEVS else "<b>[owner]</b>"
+    status1 = "[ founder ]" if event.sender_id in DEVS else "[ terserah ]"
     remaining_days = None
     status = "premium"
     start = time.time()

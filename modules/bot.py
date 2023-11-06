@@ -12,6 +12,8 @@ import time
 from platform import python_version as pyver
 from random import choice
 
+from asyncio import sleep
+
 from telethon import __version__
 from telethon.errors.rpcerrorlist import (BotMethodInvalidError,
                                           ChatSendMediaForbiddenError)

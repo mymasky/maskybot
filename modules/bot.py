@@ -57,7 +57,7 @@ alive_txt = """
   ◈ Telethon - {}
 """
 
-in_alive = "<b>Starlight-Ubot</b>\n<b>     status : <code>{}</code>{}\n       expired_on : <code>{}</code>\n       dc_id : <code>{}</code>\n       ping_dc : <code>{} ms</code>\n       version : <code>{}</code>\n       nayalibs : <code>{}</code>\n       uptime : <code>{}</code>"
+in_alive = "<b>Starlight-Ubot</b>\n<b>     status : <code>{}</code>{}\n       expired_on : <code>{}</code>\n       dc_id : <code>{}</code>\n       ping_dc : <code>{} ms</code>\n       V : <code>{}</code>\n       Maskylibs : <code>{}</code>\n       uptime : <code>{}</code>"
 
 absen = [
     "**sok asik anjj** ",
@@ -96,7 +96,7 @@ async def lol(
             entity, Chat
         ):
             groups += 1
-    status1 = "[ founder ]" if ayra.sender_id in DEVS else "[ terserah ]"
+    status1 = " [ founder ]" if ayra.sender_id in DEVS else " [ terserah ]"
     remaining_days = None
     start = time.time()
     await ayra.client(PingRequest(ping_id=0))
@@ -280,7 +280,7 @@ async def inline_alive(
 ):
     pic = udB.get_key("ALIVE_PIC")
     remaining_days = None
-    status1 = "[ founder ]" if event.sender_id in DEVS else "[ terserah ]"
+    status1 = " [ founder ]" if event.sender_id in DEVS else " [ terserah ]"
     remaining_days = None
     status = "premium"
     start = time.time()

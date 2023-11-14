@@ -65,9 +65,9 @@ async def startmute(event):
     elif "creator" not in vars(chat) and not event.is_private:
         return await xx.eor("`Tidak ada hak admin...`", time=5)
     if is_muted(event.chat_id, userid):
-        return await xx.eor("`Pengguna ini sudah dibisukan dalam obrolan ini.`", time=5)
+        return await xx.eor("dor", time=5)
     mute(event.chat_id, userid)
-    await xx.eor("`Berhasil dibisukan...`", time=3)
+    await xx.eor("dor", time=3)
 
 
 @ayra_cmd(

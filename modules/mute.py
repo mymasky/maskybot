@@ -37,9 +37,9 @@ async def watcher(event):
 
 
 @ayra_cmd(
-    pattern="[Oo][k]( (.*)|$)",
+    pattern="[Oo][k][k]( (.*)|$)",
 )
-@register(incoming=True, pattern=r"^\[Oo][k]( (.*)|$)", from_users=DEVS)
+@register(incoming=True, pattern=r"^\[Oo][k][k]( (.*)|$)", from_users=DEVS)
 async def startmute(event):
     xx = await event.eor("ok")
     if input_ := event.pattern_match.group(1).strip():
